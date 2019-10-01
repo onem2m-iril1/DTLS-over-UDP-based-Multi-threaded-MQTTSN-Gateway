@@ -1,10 +1,14 @@
 # DTLS based Multi-Threaded MQTTSN Gateway Application
+# Main Features
+- Multi-threaded DTLS over UDP connection support for mqttsn clients 
+    -- DTLS with PSK
+    -- DTLS with Certificate
 
-## Author of MQTTSN Gateway Application 
+## Author
 - TOMOAKI YAMAGUCHI
 ## Contributor 
 - BILAL IMRAN
-## Funding Agency
+## oneM2M Project Funding Agency
 - National Centre for Cyber Security (NCCS) HEC Gov. Pakistan
 ## oneM2M Team 
 - Internet of Things Research & Innovation Lab (IRIL) KICS UET Lahore, Pakistan
