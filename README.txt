@@ -4,7 +4,7 @@ DTLS support on MQTT-SN in compliance with oneM2M
 /*
  *	Author:			  TOMOAKI YAMAGUCHI
  *	Contributor:	BILAL IMRAN
- *  Team:         oneM2M Security Framework Developer for constrained IoT devices @ IRIL KICS UET, Lahore
+ *  WorkingTeam:         oneM2M Security Framework Developer for constrained IoT devices @ IRIL KICS UET, Lahore
  *  Team Members: Bilal Afzal, M. Ahsan, Asim Tanwir, M. Rehan, Dr. Ali Hammad, Dr. Ghalib A. Shah
  *	Contribution:	
  *      (1) Multi-threaded DTLS over UDP connection support to connect to MQTTSN Gateway either using Pre-shared Key or Certificates
