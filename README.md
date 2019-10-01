@@ -1,5 +1,5 @@
 # S-MQTTSN: DTLS based Multi-Threaded MQTTSN Gateway Application
-# Main Features
+## Main Features
 * Multi-threaded DTLS over UDP connection support for mqttsn clients 
     * DTLS with PSK
     * DTLS with Certificate
