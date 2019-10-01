@@ -137,8 +137,8 @@ $ ./MQTTSNGateway -f gateway.conf1
 - Internet of Things Research & Innovation Lab (IRIL) KICS UET Lahore, Pakistan
 ## Team Members
 - Bilal Imran (Sr. Research Officer)
-- Bilal Afzal (Team Leader)
-- Muhammad Ahsan (A. Team Leader)
+- Bilal Afzal (Previous Team Leader)
+- Muhammad Ahsan (Team Leader)
 - Asim Tanwir (Research Officer)
 - Muhammad Rehan (Research Officer)
 - Dr. Ali Hammad Akbar (Co. Principal Investigator)
