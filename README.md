@@ -11,9 +11,23 @@ The current release of MQTTSN Gateway Application @ https://github.com/eclipse/p
 connection to its mqttsn clients and lags in providing DTLS based security. This new release of DTLS based Multi-Threaded MQTTSN Gateway  Application @ supports Multi-threaded DTLS based connections to its mqttsn clients which uses either Pre-shared Key or the Certificates to connect to this MQTTSN Gateway. In addition to Certificate based TLS over TCP connection support, a Pre-shared Key based TLS over TCP connection suppport is also added to ease the mqttsn clients to connect to MQTT broker.
 ## Dependencies
 * git
-* openssl
+```
+$ sudo apt-get update
+$ sudo apt-get install git
+```
+* libssl-dev
+```
+$ sudo apt-get install libssl-dev
+```
 * make 
+```
+$ sudo apt-get update
+$ sudo apt-get install make
+```
 * c++
+```
+$ sudo apt-get install g++
+```
 ## Installation
 * Clone
 ```
