@@ -3,7 +3,9 @@
 * Multi-threaded DTLS over UDP connection support for mqttsn clients 
     * DTLS with PSK
     * DTLS with Certificate
-
+* TLS over TCP connection support for MQTTSN Gateway to connect to Broker
+    * TLS with PSK (Additional)
+    * TLS with Certifate (Already Available)
 ## Author
 - TOMOAKI YAMAGUCHI
 ## Contributor 
