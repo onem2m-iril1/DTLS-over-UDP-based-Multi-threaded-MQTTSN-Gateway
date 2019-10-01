@@ -8,7 +8,7 @@
     * TLS with Certifate (Already Available)
 ## Project Description
 The current release of MQTTSN Gateway Application @ https://github.com/eclipse/paho.mqtt-sn.embedded-c.git supports UDP based
-connection to its mqttsn clients and lags in providing DTLS based security. This new release of DTLS based Multi-Threaded MQTTSN Gateway  Application @ supports Multi-threaded DTLS based connections to its mqttsn clients which uses either Pre-shared Key or the Certificates to connect to this MQTTSN Gateway. In addition to Certificate based TLS over TCP connection support, a Pre-shared Key based TLS over TCP connection suppport is also added to ease the mqttsn clients to connect to MQTT broker.
+connection for its mqttsn clients and lags in providing DTLS based security. This new release of DTLS based Multi-Threaded MQTTSN Gateway  Application @ supports Multi-threaded DTLS based connections to its mqttsn clients which uses either Pre-shared Key or the Certificates to connect to this MQTTSN Gateway. In addition to Certificate based TLS over TCP connection support, a Pre-shared Key based TLS over TCP connection suppport is also added to ease the mqttsn clients to connect to MQTT broker.
 ## Dependencies
 * git
 ```
@@ -72,7 +72,7 @@ The Configuration file of S-MQTTSN Gateway @ installed_directory/S-MQTTSN/gatewa
    * <Note: 06> Please use IP address of the Mosquitto broker in the CN field of the server certificate else it would be rejected by the paho-mqttsn client written in Mbed OS available @ and handshake will fail
    * <NOTE: 07> Please comment every other option to make this setting work on MQTT broker
    
-## MQTTSN Gateway Connection Settings @ gateway.conf01 file:
+## Gateway Connection Settings @ gateway.conf01 file:
 * Plain UDP Connection Setting:
    * This version of MQTTSN Gateway Application @ doesn't provide support to downgrade its connection settings to simple UDP as the complete focus to this project is to provide means to secure data from mqttsn clients via DTLS over UDP connection but if you still want to use plain UDP please refer to the previous stable verison of MQTTSN Gateway Application @ https://github.com/eclipse/paho.mqtt sn.embedded-c.git 
 * Pre-shared Key based DTLS over UDP Connection Setting:
@@ -122,6 +122,11 @@ The Configuration file of S-MQTTSN Gateway @ installed_directory/S-MQTTSN/gatewa
 ```
 $ ./MQTTSNGateway -f gateway.conf1
 ```
+## Hardware Tested
+* Tested on NUCLEO-L476RG running Mbed-OS
+## Note
+   * Thread close/exit procedure is added in case if mqtt-sn client sends a DISCONNECT packet
+   * Thread close/exit procedure is to be added in case if mqtt-sn client, for some reason, disconnect without even sending a proper DISCONNECT packet
 ## Author
 - TOMOAKI YAMAGUCHI
 ## Contributor 
