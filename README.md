@@ -1,8 +1,8 @@
 # DTLS based Multi-Threaded MQTTSN Gateway Application
 # Main Features
-- Multi-threaded DTLS over UDP connection support for mqttsn clients 
-    -- DTLS with PSK
-    -- DTLS with Certificate
+* Multi-threaded DTLS over UDP connection support for mqttsn clients 
+    * DTLS with PSK
+    * DTLS with Certificate
 
 ## Author
 - TOMOAKI YAMAGUCHI
