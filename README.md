@@ -31,10 +31,6 @@ $ make install
 ```
 $ make clean
 ```
-## Run
-```
-$ ./MQTTSNGateway -f gateway.conf1
-```
 ## Connection Setup
 The Configuration file of S-MQTTSN Gateway @ installed_directory/S-MQTTSN/gateway.config1 has multiple plug-ins to run gateway in different modes. The following necessary settings of those plug-ins are shown to enable each connection setup. 
 * <NOTE: 01> Please follow the setting given below as mentioned for safe connection setup.
@@ -108,6 +104,10 @@ The Configuration file of S-MQTTSN Gateway @ installed_directory/S-MQTTSN/gatewa
    * TlsDebug is optional (if set to 'YES', would debug the TLS over TCP connection)
    * <NOTE: 08> Please choose port number other than 1883, 8883 as they are used to connect to the broker
    * <NOTE: 09> Please set other settings accordingly to make this setting work on MQTTSN Gateway	
+## Run
+```
+$ ./MQTTSNGateway -f gateway.conf1
+```
 ## Author
 - TOMOAKI YAMAGUCHI
 ## Contributor 
