@@ -49,7 +49,7 @@ $ make clean
 The Configuration file of S-MQTTSN Gateway @ installed_directory/S-MQTTSN/gateway.config1 has multiple plug-ins to run gateway in different modes. The following necessary settings of those plug-ins are shown to enable each connection setup. 
 * <NOTE: 01> Please follow the setting given below as mentioned for safe connection setup.
 * <NOTE: 02> Do not run more than one settings at once because it wouldn't work. Protection against these settings are added into the program to make in run in appropriate conditions.
-* <NOTE: 03> It is highly recommended to do broker setting at 1st. Broker settings could easily be done @ mosquitto.conf file in the directory to mosquitto broker where it is installed in the system 
+* <NOTE: 03> It is highly recommended to do broker setting first. Broker settings could easily be done @ mosquitto.conf file in the directory to mosquitto broker where it is installed in the system 
 
 ## Mosquitto Broker Connection Settings @ mosquitto/mosquitto.conf file:
 * Plain TCP Connection Setting:
@@ -123,8 +123,8 @@ The Configuration file of S-MQTTSN Gateway @ installed_directory/S-MQTTSN/gatewa
 $ ./MQTTSNGateway -f gateway.conf1
 ```
 ## Hardware Tested
-* Tested on NUCLEO-L476RG running Mbed-OS
-## Note
+* Tested on NUCLEO-L476RG running Mbed-OS and using paho-mqtt-sn library @ 
+## Thread Exit Procedures
    * Thread close/exit procedure is added in case if mqtt-sn client sends a DISCONNECT packet
    * Thread close/exit procedure is to be added in case if mqtt-sn client, for some reason, disconnect without even sending a proper DISCONNECT packet
 ## Author
