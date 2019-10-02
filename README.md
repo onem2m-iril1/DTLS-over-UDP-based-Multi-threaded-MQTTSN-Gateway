@@ -126,7 +126,7 @@ The Configuration file of S-MQTTSN Gateway @ installed_directory/S-MQTTSN/gatewa
    * <NOTE: 17> Please set other settings accordingly to make this setting work on MQTTSN Gateway	
 ## Run
 ```
-$ ./MQTTSNGateway -f gateway.conf
+$ ./MQTTSNGateway -f gateway.conf01
 ```
 ## Hardware Tested
 * Tested on NUCLEO-L476RG running Mbed-OS and using paho-mqtt-sn library @ 
