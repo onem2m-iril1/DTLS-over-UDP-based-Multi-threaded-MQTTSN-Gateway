@@ -133,6 +133,7 @@ $ ./MQTTSNGateway -f gateway.conf01
 ## Thread Exit Procedures
    * Thread close/exit procedure is added in case if mqtt-sn client sends a DISCONNECT packet
    * Thread close/exit procedure is to be added in case if mqtt-sn client, for some reason, disconnect without even sending a proper DISCONNECT packet
+   * Disconnected client is deleted/erased from the existing Client List
 ## Author
 - TOMOAKI YAMAGUCHI
 ## Contributor 
