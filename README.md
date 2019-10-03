@@ -28,22 +28,9 @@ $ sudo apt-get install make
 ```
 $ sudo apt-get install g++
 ```
-## Installation
-* Clone
+## Clone
 ```
 $ git clone -b brach_name project_url.git
-```
-* Make
-```
-$ make -j4
-```
-* Install
-```
-$ make install
-```
-## Clean
-```
-$ make clean
 ```
 ## Connection Setup
 The Configuration file of S-MQTTSN Gateway in installed_directory/S-MQTTSN-V01/gateway.config01 has multiple plug-ins to run gateway in different modes. The following necessary settings of those plug-ins are shown to enable each connection setup. 
@@ -124,6 +111,18 @@ The Configuration file of S-MQTTSN Gateway in installed_directory/S-MQTTSN-V01/g
    * TlsDebug is optional (if set to 'YES', would debug the TLS over TCP connection)
    * <NOTE: 16> Please choose port number other than 1883, 8883 as they are used to connect to the broker
    * <NOTE: 17> Please set other settings accordingly to make this setting work on MQTTSN Gateway	
+## Make
+```
+$ make -j4
+```
+## Install
+```
+$ make install
+```
+## Clean
+```
+$ make clean
+```
 ## Run
 ```
 $ ./MQTTSNGateway -f gateway.conf01
