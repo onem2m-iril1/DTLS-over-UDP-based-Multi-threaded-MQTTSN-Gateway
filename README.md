@@ -46,12 +46,12 @@ $ make install
 $ make clean
 ```
 ## Connection Setup
-The Configuration file of S-MQTTSN Gateway @ installed_directory/S-MQTTSN-V01/gateway.config01 has multiple plug-ins to run gateway in different modes. The following necessary settings of those plug-ins are shown to enable each connection setup. 
+The Configuration file of S-MQTTSN Gateway in installed_directory/S-MQTTSN-V01/gateway.config01 has multiple plug-ins to run gateway in different modes. The following necessary settings of those plug-ins are shown to enable each connection setup. 
 * <NOTE: 01> Please follow the setting given below as mentioned for safe connection setup.
 * <NOTE: 02> Do not run more than one settings at once because it wouldn't work. Protection against these settings are added into the program to make in run in appropriate conditions.
-* <NOTE: 03> It is highly recommended to do broker setting first. Broker settings could easily be done @ mosquitto.conf file in the directory to mosquitto broker where it is installed in the system 
+* <NOTE: 03> It is highly recommended to do broker setting first. Broker settings could easily be done in mosquitto.conf file in the directory to mosquitto broker where it is installed in the system 
 
-## Mosquitto Broker Connection Settings @ mosquitto/mosquitto.conf file:
+## Mosquitto Broker Connection Settings in mosquitto/mosquitto.conf file:
 * Plain TCP Connection Setting:
    * 'port' set to '1883' in 'Default listener section'
    * <NOTE: 04> Please comment every other option to make this setting work on MQTT broker
@@ -72,7 +72,7 @@ The Configuration file of S-MQTTSN Gateway @ installed_directory/S-MQTTSN-V01/ga
    * <Note: 06> Please use IP address of the Mosquitto broker in the CN field of the server certificate else it would be rejected by the paho-mqttsn client written in Mbed OS available @ and handshake will fail
    * <NOTE: 07> Please comment every other option to make this setting work on MQTT broker
 
-## Gateway Connection Settings @ gateway.conf01 file:
+## Gateway Connection Settings in gateway.conf01 file:
 * Plain UDP Connection Setting:
    * This version of S-MQTTSN Gateway Application @ https://github.com/onem2m-iril1/S-MQTTSN-V01.git doesn't provide support to downgrade its connection settings to simple UDP as the complete focus to this project is to provide means to secure data from mqttsn clients via DTLS over UDP connection but if you still want to use plain UDP please refer to the previous stable verison of MQTTSN Gateway Application @ https://github.com/eclipse/paho.mqttsn.embedded-c.git 
 * Pre-shared Key based DTLS over UDP Connection Setting:
