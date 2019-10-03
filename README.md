@@ -129,7 +129,8 @@ The Configuration file of S-MQTTSN Gateway in installed_directory/S-MQTTSN-V01/g
 $ ./MQTTSNGateway -f gateway.conf01
 ```
 ## Hardware Tested
-* Tested on NUCLEO-L476RG running Mbed-OS and using paho-mqtt-sn library @ 
+* Tested on RaspberryPi-2 running RaspbianOS (Jessie Version) 
+* Tested with NUCLEO-L476RG mqttsn-clients @ running Mbed-OS @ and using paho-mqtt-sn library @ . 
 ## Thread Exit Procedures
    * Thread close/exit procedure is added in case if mqtt-sn client sends a DISCONNECT packet
    * Thread close/exit procedure is to be added in case if mqtt-sn client, for some reason, disconnect without even sending a proper DISCONNECT packet
