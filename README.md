@@ -1,6 +1,6 @@
 # dtls-mqttsngateway
 ## Main Features
-* Multi-threaded DTLS over UDP connection support for mqttsn clients 
+* Multi-threaded DTLS over UDP connection modes supported for mqttsn clients 
     * DTLS with PSK
     * DTLS with Certificate
 * TLS over TCP connection support for MQTTSN Gateway to connect to Broker
@@ -34,9 +34,9 @@ $ git clone -b brach_name project_url.git
 ```
 ## Connection Setup
 The Configuration file of MQTTSN Gateway in installed_directory/dtls-mqttsngateway/gateway.config01 has multiple plug-ins to run gateway in different modes. The following necessary settings of those plug-ins are shown to enable each connection setup. 
-* <NOTE: 01> Please follow the setting given below as mentioned for safe connection setup.
+* <NOTE: 01> Please follow the settings given in the next section for secure connection setup.
 * <NOTE: 02> Do not run more than one settings at once because it wouldn't work.
-* <NOTE: 03> It is highly recommended to do broker setting first. Broker settings could easily be done in mosquitto.conf file in the directory to mosquitto broker where it is installed in the system 
+* <NOTE: 03> It is highly recommended to configure Broker using mosquitto.conf file which can easily be found in installed directory. 
 
 ## Mosquitto Broker Connection Settings in mosquitto/mosquitto.conf file:
 * Plain TCP Connection Setting:
