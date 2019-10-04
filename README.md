@@ -51,8 +51,8 @@ The Configuration file of MQTTSN Gateway in installed_directory/dtls-mqttsngatew
    * set 'psk_hint' to 'bridge' (as an example) in 'Pre-shared-key based SSL/TLS support' section
    * set 'allow_anonymous' to 'true' in 'Security' section
    * set 'psk_file' to '/home/pi/Desktop/key_file.txt' (as an example) in 'Default authentication and topic access control' section.
-   * Note: The directory should be where the keys & IDs are written in a file '.txt' and defined in a format e.g:           'bridge:0102030405'
-   * <NOTE: 05> Please comment every other option to make this setting work on MQTT broker
+   * <Note: 05> The directory should be where the keys & IDs are written in a file '.txt' and defined in a format e.g:           'bridge:0102030405'
+   * <NOTE: 06> Please comment every other option to make this setting work on MQTT broker
 * TLS with Certificate over TCP Connection Setting:
    * port set to 8883 in Default listener section
    * cafile set to the address/CA.crt e.g: /home/pi/Desktop/CA.crt
@@ -61,8 +61,8 @@ The Configuration file of MQTTSN Gateway in installed_directory/dtls-mqttsngatew
    * keyfile set to the address of server key e.g: /home/pi/Desktop/server.key
    * require_certificate set to 'true'
    * use_subject_as_username set to 'true'
-   * <Note: 06> Please use IP address of the Mosquitto broker in the CN field of the server certificate else it would be rejected by the paho-mqttsn client written in Mbed OS available @ and handshake will fail
-   * <NOTE: 07> Please comment every other option to make this setting work on MQTT broker
+   * <Note: 07> Please use IP address of the Mosquitto broker in the CN field of the server certificate else it would be rejected by the paho-mqttsn client written in Mbed OS available @ and handshake will fail
+   * <NOTE: 08> Please comment every other option to make this setting work on MQTT broker
 
 ## Gateway Connection Settings in gateway.conf01 file:
 * Plain UDP Connection Setting:
