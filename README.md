@@ -40,17 +40,17 @@ $ git clone -b brach_name project_url.git
 The Configuration file of MQTTSN Gateway in installed_directory/dtls-mqttsngateway/gateway.config01 has multiple plug-ins to run gateway in different modes. The following necessary settings of those plug-ins are shown to enable each connection setup. 
 * <NOTE: 01> Please follow the settings given in the next section for secure connection setup.
 * <NOTE: 02> Do not run more than one settings at once because it wouldn't work.
-* <NOTE: 03> It is highly recommended to configure Broker using mosquitto.conf file which can be easily found in installed directory. 
+* <NOTE: 03> It is highly recommended to configure Broker first using mosquitto.conf file which can be easily found in installed directory. 
 
 ## Mosquitto Broker Connection Settings in mosquitto/mosquitto.conf file:
-* Plain TCP Connection Setting:
-   * 'port' set to '1883' in 'Default listener section'
-   * <NOTE: 04> Please comment every other option to make this setting work on MQTT broker
+* Plain TCP Connection Settings:
+   * set 'port' to '1883' in 'Default listener' section.
+   * <NOTE: 04> Please comment every other option to make these setting work on MQTT broker.
 * TLS with PSK over TCP Connection Setting:
-   * port set to '8883' in Default listener section
-   * psk_hint set to "'bridge' (just an example, you can change it)" in Pre-shared-key based SSL/TLS support section
-   * allow_anonymous set to 'true' in Security section
-   * psk_file set to '/home/pi/Desktop/key_file.txt' directory in Default authentication and topic access control section the directory  address should be where the keys & IDs are written in a file '.txt' and defined in a format e.g: 'bridge:0102030405'
+   * set 'port' to '8883' in 'Default listener' section
+   * set 'psk_hint' to 'bridge' (as an example) in 'Pre-shared-key based SSL/TLS support' section
+   * set 'allow_anonymous' to 'true' in 'Security' section
+   * set 'psk_file' to '/home/pi/Desktop/key_file.txt' (as an example) in 'Default authentication and topic access control' section. Note: The directory address should be where the keys & IDs are written in a file '.txt' and defined in a format e.g: 'bridge:0102030405'
    * <NOTE: 05> Please comment every other option to make this setting work on MQTT broker
 * TLS with Certificate over TCP Connection Setting:
    * port set to 8883 in Default listener section
