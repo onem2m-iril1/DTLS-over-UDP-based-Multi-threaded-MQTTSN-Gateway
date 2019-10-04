@@ -50,7 +50,8 @@ The Configuration file of MQTTSN Gateway in installed_directory/dtls-mqttsngatew
    * set 'port' to '8883' in 'Default listener' section
    * set 'psk_hint' to 'bridge' (as an example) in 'Pre-shared-key based SSL/TLS support' section
    * set 'allow_anonymous' to 'true' in 'Security' section
-   * set 'psk_file' to '/home/pi/Desktop/key_file.txt' (as an example) in 'Default authentication and topic access control' section. Note: The directory address should be where the keys & IDs are written in a file '.txt' and defined in a format e.g: 'bridge:0102030405'
+   * set 'psk_file' to '/home/pi/Desktop/key_file.txt' (as an example) in 'Default authentication and topic access control' section.
+   * Note: The directory should be where the keys & IDs are written in a file '.txt' and defined in a format e.g:           'bridge:0102030405'
    * <NOTE: 05> Please comment every other option to make this setting work on MQTT broker
 * TLS with Certificate over TCP Connection Setting:
    * port set to 8883 in Default listener section
