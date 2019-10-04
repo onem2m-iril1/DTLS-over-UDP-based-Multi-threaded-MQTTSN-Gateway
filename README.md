@@ -5,10 +5,10 @@
     * DTLS with Certificate
 * TLS over TCP connection support for MQTTSN Gateway to connect to Broker
     * TLS with PSK 
-    * TLS with Certifate 
+    * TLS with Certificate 
 ## Project Description
 The current release of MQTTSN Gateway Application @ https://github.com/eclipse/paho.mqtt-sn.embedded-c.git supports UDP based
-connection for its mqttsn clients and lags in providing DTLS based security. This new release of DTLS based Multi-Threaded MQTTSN Gateway  Application @ https://github.com/onem2m-iril1/dtls-mqttsngateway.git supports Multi-threaded DTLS based connections to its mqttsn clients which uses either Pre-shared Key or the Certificates to connect to this MQTTSN Gateway. In addition to Certificate based TLS over TCP connection support, a Pre-shared Key based TLS over TCP connection suppport is also added to ease the gateway to connect to MQTT broker.
+connections for its mqttsn clients and lags in providing DTLS based security. This new release of DTLS based Multi-Threaded MQTTSN Gateway Application @ https://github.com/onem2m-iril1/dtls-mqttsngateway.git supports Multi-threaded DTLS based connections to its mqttsn clients which use either Pre-shared Keys or Certificates to connect to respective MQTTSN Gateway. In addition to Certificate based TLS over TCP connection support, a Pre-shared Key based TLS over TCP connection suppport is also provided to facilitate the connectivity of gateway to MQTT broker.
 ## Dependencies
 * git
 ```
@@ -33,7 +33,7 @@ $ sudo apt-get install g++
 $ git clone -b brach_name project_url.git
 ```
 ## Connection Setup
-The Configuration file of S-MQTTSN Gateway in installed_directory/dtls-mqttsngateway/gateway.config01 has multiple plug-ins to run gateway in different modes. The following necessary settings of those plug-ins are shown to enable each connection setup. 
+The Configuration file of MQTTSN Gateway in installed_directory/dtls-mqttsngateway/gateway.config01 has multiple plug-ins to run gateway in different modes. The following necessary settings of those plug-ins are shown to enable each connection setup. 
 * <NOTE: 01> Please follow the setting given below as mentioned for safe connection setup.
 * <NOTE: 02> Do not run more than one settings at once because it wouldn't work.
 * <NOTE: 03> It is highly recommended to do broker setting first. Broker settings could easily be done in mosquitto.conf file in the directory to mosquitto broker where it is installed in the system 
