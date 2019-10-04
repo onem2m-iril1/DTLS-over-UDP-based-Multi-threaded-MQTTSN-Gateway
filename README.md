@@ -8,7 +8,7 @@
     * TLS with Certifate 
 ## Project Description
 The current release of MQTTSN Gateway Application @ https://github.com/eclipse/paho.mqtt-sn.embedded-c.git supports UDP based
-connection for its mqttsn clients and lags in providing DTLS based security. This new release of DTLS based Multi-Threaded MQTTSN Gateway  Application @ https://github.com/onem2m-iril1/S-MQTTSN-V01.git supports Multi-threaded DTLS based connections to its mqttsn clients which uses either Pre-shared Key or the Certificates to connect to this MQTTSN Gateway. In addition to Certificate based TLS over TCP connection support, a Pre-shared Key based TLS over TCP connection suppport is also added to ease the gateway to connect to MQTT broker.
+connection for its mqttsn clients and lags in providing DTLS based security. This new release of DTLS based Multi-Threaded MQTTSN Gateway  Application @ https://github.com/onem2m-iril1/dtls-mqttsngateway.git supports Multi-threaded DTLS based connections to its mqttsn clients which uses either Pre-shared Key or the Certificates to connect to this MQTTSN Gateway. In addition to Certificate based TLS over TCP connection support, a Pre-shared Key based TLS over TCP connection suppport is also added to ease the gateway to connect to MQTT broker.
 ## Dependencies
 * git
 ```
@@ -33,7 +33,7 @@ $ sudo apt-get install g++
 $ git clone -b brach_name project_url.git
 ```
 ## Connection Setup
-The Configuration file of S-MQTTSN Gateway in installed_directory/S-MQTTSN-V01/gateway.config01 has multiple plug-ins to run gateway in different modes. The following necessary settings of those plug-ins are shown to enable each connection setup. 
+The Configuration file of S-MQTTSN Gateway in installed_directory/dtls-mqttsngateway/gateway.config01 has multiple plug-ins to run gateway in different modes. The following necessary settings of those plug-ins are shown to enable each connection setup. 
 * <NOTE: 01> Please follow the setting given below as mentioned for safe connection setup.
 * <NOTE: 02> Do not run more than one settings at once because it wouldn't work.
 * <NOTE: 03> It is highly recommended to do broker setting first. Broker settings could easily be done in mosquitto.conf file in the directory to mosquitto broker where it is installed in the system 
@@ -61,7 +61,7 @@ The Configuration file of S-MQTTSN Gateway in installed_directory/S-MQTTSN-V01/g
 
 ## Gateway Connection Settings in gateway.conf01 file:
 * Plain UDP Connection Setting:
-   * This version of S-MQTTSN Gateway Application @ https://github.com/onem2m-iril1/S-MQTTSN-V01.git doesn't provide support to downgrade its connection settings to simple UDP as the complete focus to this project is to provide means to secure data from mqttsn clients via DTLS over UDP connection but if you still want to use plain UDP please refer to the previous stable verison of MQTTSN Gateway Application @ https://github.com/eclipse/paho.mqttsn.embedded-c.git 
+   * This version of S-MQTTSN Gateway Application @ https://github.com/onem2m-iril1/dtls-mqttsngateway.git doesn't provide support to downgrade its connection settings to simple UDP as the complete focus to this project is to provide means to secure data from mqttsn clients via DTLS over UDP connection but if you still want to use plain UDP please refer to the previous stable verison of MQTTSN Gateway Application @ https://github.com/eclipse/paho.mqttsn.embedded-c.git 
 * Pre-shared Key based DTLS over UDP Connection Setting:
    * BrokerSecurePortNo set to 8883
    * BrokerName set to IP address of the Mosquitto MQTT Broker
@@ -129,7 +129,7 @@ $ ./MQTTSNGateway -f gateway.conf01
 ```
 ## Hardware Tested
 * Tested on RaspberryPi-2 running RaspbianOS (Jessie Version) 
-* Tested with NUCLEO-L476RG mqttsn-clients @ running Mbed-OS @ and using paho-mqtt-sn library @ . 
+* Tested with NUCLEO-L476RG mqttsn-client @ running Mbed-OS and using paho-mqtt-sn library. 
 ## Thread Exit Procedures
    * Thread close/exit procedure is added in case if mqtt-sn client sends a DISCONNECT packet
    * Thread close/exit procedure is to be added in case if mqtt-sn client, for some reason, disconnect without even sending a proper DISCONNECT packet
