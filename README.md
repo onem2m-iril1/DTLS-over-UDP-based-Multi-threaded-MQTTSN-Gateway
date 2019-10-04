@@ -61,7 +61,7 @@ The Configuration file of S-MQTTSN Gateway in installed_directory/dtls-mqttsngat
 
 ## Gateway Connection Settings in gateway.conf01 file:
 * Plain UDP Connection Setting:
-   * This version of S-MQTTSN Gateway Application @ https://github.com/onem2m-iril1/dtls-mqttsngateway.git doesn't provide support to downgrade its connection settings to simple UDP as the complete focus to this project is to provide means to secure data from mqttsn clients via DTLS over UDP connection but if you still want to use plain UDP please refer to the previous stable verison of MQTTSN Gateway Application @ https://github.com/eclipse/paho.mqttsn.embedded-c.git 
+   * This version of MQTTSN Gateway Application @ https://github.com/onem2m-iril1/dtls-mqttsngateway.git doesn't provide support to downgrade its connection settings to simple UDP as the complete focus to this project is to provide means to secure data from mqttsn clients via DTLS over UDP connection but if you still want to use plain UDP please refer to the previous stable verison of MQTTSN Gateway Application @ https://github.com/eclipse/paho.mqttsn.embedded-c.git 
 * Pre-shared Key based DTLS over UDP Connection Setting:
    * BrokerSecurePortNo set to 8883
    * BrokerName set to IP address of the Mosquitto MQTT Broker
