@@ -28,6 +28,10 @@ $ sudo apt-get install make
 ```
 $ sudo apt-get install g++
 ```
+* MQTT Broker
+```
+$ sudo apt-get install mosquitto
+```
 ## Clone
 ```
 $ git clone -b brach_name project_url.git
@@ -36,7 +40,7 @@ $ git clone -b brach_name project_url.git
 The Configuration file of MQTTSN Gateway in installed_directory/dtls-mqttsngateway/gateway.config01 has multiple plug-ins to run gateway in different modes. The following necessary settings of those plug-ins are shown to enable each connection setup. 
 * <NOTE: 01> Please follow the settings given in the next section for secure connection setup.
 * <NOTE: 02> Do not run more than one settings at once because it wouldn't work.
-* <NOTE: 03> It is highly recommended to configure Broker using mosquitto.conf file which can easily be found in installed directory. 
+* <NOTE: 03> It is highly recommended to configure Broker using mosquitto.conf file which can be easily found in installed directory. 
 
 ## Mosquitto Broker Connection Settings in mosquitto/mosquitto.conf file:
 * Plain TCP Connection Setting:
