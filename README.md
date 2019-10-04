@@ -1,4 +1,4 @@
-# smqttsn_gateway_v01
+# dtls-mqttsngateway
 ## Main Features
 * Multi-threaded DTLS over UDP connection support for mqttsn clients 
     * DTLS with PSK
